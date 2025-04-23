@@ -1,0 +1,35 @@
+/* Color Example */
+.color-example {
+    color: teal; /* Favorite named color */
+    background-color: #ffe4b5; /* Hex color - contrasting background */
+    border: 2px solid darkslategray;
+}
+
+/* Header Example */
+.header-example {
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    color: darkred;
+}
+
+/* List Example */
+.list-example {
+    color: darkblue;
+    list-style-type: square;
+}
+
+/* Text Example */
+.text-example {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+/* Div Example */
+.div-example {
+    background-color: #f0f8ff;
+    border: 2px dashed steelblue;
+    padding: 10px;
+    margin-top: 20px;
+}
