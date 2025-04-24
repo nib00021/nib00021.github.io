@@ -1,0 +1,65 @@
+/* Center the whole site */
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 0;
+  }
+  
+  /* Layout parts */
+  #header {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #nav {
+    background-color: #ffe4b5;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  section, article {
+    width: 60%;
+    padding: 15px;
+    background-color: #d1f7c4;
+    box-sizing: border-box;
+  }
+  
+  aside {
+    width: 35%;
+    padding: 15px;
+    background-color: #cce5ff;
+    box-sizing: border-box;
+  }
+  
+  footer {
+    background-color: #b2bec3;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    clear: both;
+  }
+  
+  /* Optional: Responsive tweaks */
+  @media (max-width: 768px) {
+    section, article, aside {
+      width: 100%;
+    }
+  }
+  
