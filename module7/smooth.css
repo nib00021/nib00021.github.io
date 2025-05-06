@@ -1,0 +1,22 @@
+/* Smooth transitions */
+a, .btn, img {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image zoom on hover */
+.img-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar hover underline effect */
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffa51e;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
