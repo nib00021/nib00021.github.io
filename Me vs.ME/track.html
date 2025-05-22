@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Track Progress - Me vs. Me</title>
+  <link rel="icon" href="favicon.ico" >
+  <link rel="stylesheet" href="css/styles.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="header-logo-link">
+      <img src="images/mevsme.jpg" alt="Me vs. Me Logo" class="header-logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="track.html" class="active">Tracker</a>
+      <a href="progress.html">Progress</a> <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section class="tracking-section">
+        <h2>Track Your Progress</h2>
+        <form class="tracking-form">
+          <div class="form-group">
+            <label for="sleep">Sleep (hrs):</label>
+            <input type="number" id="sleep" name="sleep" min="0" max="24" step="0.1" placeholder="e.g., 7.5" >
+          </div>
+          <div class="form-group">
+            <label for="fitness">Fitness (mins):</label>
+            <input type="number" id="fitness" name="fitness" min="0" placeholder="e.g., 30" >
+          </div>
+          <div class="form-group">
+            <label for="goals">Goals Achieved (1-10):</label>
+            <input type="number" id="goals" name="goals" min="1" max="10" placeholder="e.g., 8" >
+          </div>
+          <div class="form-group">
+            <label for="mood">Mood (1-10):</label>
+            <input type="number" id="mood" name="mood" min="1" max="10" placeholder="e.g., 7" >
+          </div>
+          <button type="submit" class="btn">Save Today's Progress</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Niklas Bäckman</p>
+      <div class="social-links">
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="images/x-logo.png" onerror="this.onerror=null;this.src='https://placehold.co/30x30/cccccc/000000?text=X';" alt="Twitter (X)">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="images/instagram-logo.jpg" onerror="this.onerror=null;this.src='https://placehold.co/30x30/cccccc/000000?text=IG';" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
