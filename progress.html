@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1" >
-  <title>Me vs. Me Tracker - Home</title>
+  <title>Progress - Me vs. Me</title>
   <link rel="icon" href="favicon.ico" >
   <link rel="stylesheet" href="css/styles.css" >
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
@@ -14,28 +15,20 @@
       <img src="images/mevsme.jpg" alt="Me vs. Me Logo" class="header-logo">
     </a>
     <nav>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="track.html">Tracker</a>
-      <a href="progress.html">Progress</a>
-      <a href="about.html">About</a>
+      <a href="progress.html" class="active">Progress</a> <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
     <div class="container">
-      <div class="hero">
-        <p>Me vs. Me is a minimalist daily self-competition site to track personal wins in sleep, fitness, goals and mood.</p>
-        <a href="track.html" class="btn">Start Tracking</a>
-        <div class="icon-links">
-          <a href="track.html"><img src="images/sleep.png" alt="Sleep"></a>
-          <a href="track.html"><img src="images/fitness.png" alt="Fitness"></a>
-          <a href="track.html"><img src="images/goals.png" alt="Goals"></a>
-          <a href="track.html"><img src="images/mood.png" alt="Mood"></a>
-          <a href="progress.html">
-            <img src="images/progress.png" alt="Progress">
-          </a>
-        </div>
-      </div> </div>
+      <section class="progress-section">
+        <h2>Your Progress Over Time</h2>
+        <p>See how you've been doing in Sleep, Fitness, Goals, and Mood.</p>
+        <canvas id="historyChart" width="800" height="400"></canvas>
+      </section>
+    </div>
   </main>
   <footer>
     <div class="footer-content">
@@ -50,5 +43,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/progress.js"></script>
 </body>
 </html>
